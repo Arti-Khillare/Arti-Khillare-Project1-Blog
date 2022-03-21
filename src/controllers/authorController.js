@@ -135,7 +135,7 @@ const loginAuthor = async function (req, res) {
     let token = jwt.sign(
       {
         authorId: Author._id.toString(),
-        groupno: "42",
+        groupno: "15",
         exp: Math.floor(Date.now() / 1000) + 10 * 60 * 60
       },
       "this-is-aSecretTokenForLogin"
